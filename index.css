@@ -1,8 +1,8 @@
 body {
   height: 100vh;
-
   margin: 0;
   padding: 0;
+
   display: grid;
   grid-template-columns: 250px 1fr;
   grid-template-rows: 60px 100px 1fr;
@@ -28,6 +28,76 @@ body {
 }
 
 .main {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "projects main_sidebar";
+
   background-color: beige;
   grid-area: main;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "project1 project2"
+    "project3 project4"
+    "project5 project6";
+
+  background-color: brown;
+  grid-area: projects;
+}
+
+.main_sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "announcements"
+    "trending";
+
+  background-color: rgb(236, 135, 2);
+  grid-area: main_sidebar;
+}
+
+.project_1 {
+  background-color: bisque;
+  grid-area: project1;
+}
+
+.project_2 {
+  background-color: red;
+  grid-area: project2;
+}
+
+.project_3 {
+  background-color: green;
+  grid-area: project3;
+}
+
+.project_4 {
+  background-color: darksalmon;
+  grid-area: project4;
+}
+
+.project_5 {
+  background-color: turquoise;
+  grid-area: project5;
+}
+
+.project_6 {
+  background-color: blanchedalmond;
+  grid-area: project6;
+}
+
+.announcements {
+  background-color: cadetblue;
+  grid-area: announcements;
+}
+
+.trending {
+  background-color: chartreuse;
+  grid-area: trending;
 }
