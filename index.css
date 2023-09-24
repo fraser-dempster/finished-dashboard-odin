@@ -4,7 +4,7 @@ body {
   padding: 0;
 
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: 60px 100px 1fr;
   grid-template-areas:
     "sidebar header"
@@ -13,7 +13,7 @@ body {
 }
 
 .sidebar {
-  background-color: aquamarine;
+  background-color: #1992d4;
   grid-area: sidebar;
 }
 
@@ -29,67 +29,87 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns: 2fr 0.5fr;
+  grid-template-columns: 2fr 0.9fr;
   grid-template-rows: 1fr;
   grid-template-areas: "projects main_sidebar";
 
-  background-color: beige;
+  background-color: #1992d4;
   grid-area: main;
 }
 
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
   grid-template-areas:
+    "project_title project_title"
     "project1 project2"
     "project3 project4"
     "project5 project6";
 
-  background-color: brown;
+  background-color: #e2e8f0;
   grid-area: projects;
+  padding-bottom: 50px;
+}
+
+.project_title {
+  background-color: darkmagenta;
+  grid-area: project_title;
+}
+
+.project_card {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 10px;
+  padding-top: 30px;
+  box-shadow: 2px 2px 2px rgb(185, 184, 184);
+  border-left: 8px solid #f0b429;
+  background-color: #ffffff;
+}
+
+.project_1 {
+  grid-area: project1;
+}
+
+.project_2 {
+  grid-area: project2;
+}
+
+.project_3 {
+  grid-area: project3;
+}
+
+.project_4 {
+  grid-area: project4;
+}
+
+.project_5 {
+  grid-area: project5;
+}
+
+.project_6 {
+  grid-area: project6;
 }
 
 .main_sidebar {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 50px 1fr 50px 1fr;
   grid-template-areas:
+    "announcements_title"
     "announcements"
+    "trending_title"
     "trending";
 
   background-color: rgb(236, 135, 2);
   grid-area: main_sidebar;
-}
-
-.project_1 {
-  background-color: bisque;
-  grid-area: project1;
-}
-
-.project_2 {
-  background-color: red;
-  grid-area: project2;
-}
-
-.project_3 {
-  background-color: green;
-  grid-area: project3;
-}
-
-.project_4 {
-  background-color: darksalmon;
-  grid-area: project4;
-}
-
-.project_5 {
-  background-color: turquoise;
-  grid-area: project5;
-}
-
-.project_6 {
-  background-color: blanchedalmond;
-  grid-area: project6;
 }
 
 .announcements {
@@ -100,4 +120,14 @@ body {
 .trending {
   background-color: chartreuse;
   grid-area: trending;
+}
+
+.announcements_title {
+  background-color: #1992d4;
+  grid-area: announcements_title;
+}
+
+.trending_title {
+  background-color: #022f47;
+  grid-area: trending_title;
 }
