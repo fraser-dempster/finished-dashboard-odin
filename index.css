@@ -18,6 +18,11 @@ p {
   margin: 0;
 }
 
+h1 {
+  color: #ffffff;
+  margin-left: 16px;
+}
+
 button {
   all: unset;
   cursor: pointer;
@@ -38,8 +43,21 @@ button:focus {
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
   background-color: #1992d4;
   grid-area: sidebar;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  font-weight: bold;
 }
 
 .search {
