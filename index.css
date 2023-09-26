@@ -193,16 +193,27 @@ button:focus {
   grid-area: announcements;
 
   display: flex;
+  flex-direction: column;
   justify-content: left;
   align-items: top;
   font-size: 1rem;
   color: #000000;
   border-radius: 10px;
   margin: 15px;
-  padding: 10px;
-  padding-top: 10px;
+  padding: 20px 30px 20px 30px;
   box-shadow: 2px 2px 2px rgb(185, 184, 184);
   background-color: #ffffff;
+  font-size: 1rem;
+}
+
+.announcement_title {
+  font-weight: bold;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+
+.announcement_paragraph {
+  color: #808080;
 }
 
 .trending {
@@ -228,4 +239,10 @@ button:focus {
 
 .trending_title {
   grid-area: trending_title;
+}
+
+hr.solid {
+  width: 100%;
+  border-bottom: 1px solid #e2e8f0;
+  margin: 20px 0 20px 0;
 }
