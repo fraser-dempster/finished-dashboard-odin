@@ -91,6 +91,11 @@ button:focus {
   font-size: 20px;
 }
 
+.column_text {
+  display: flex;
+  flex-direction: column;
+}
+
 .blue_button {
   border-radius: 20px;
   background-color: #1992d4;
@@ -222,16 +227,29 @@ button:focus {
   grid-area: trending;
 
   display: flex;
+  flex-direction: column;
   justify-content: left;
   align-items: top;
   font-size: 1rem;
   color: #000000;
   border-radius: 10px;
+  gap: 20px;
   margin: 15px;
-  padding: 10px;
-  padding-top: 10px;
+  padding: 20px 30px 20px 30px;
   box-shadow: 2px 2px 2px rgb(185, 184, 184);
   background-color: #ffffff;
+}
+
+.trending_item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.trending_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .announcements_title {
